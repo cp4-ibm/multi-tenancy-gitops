@@ -33,12 +33,12 @@ spec:
             gateway: null
           eum:
             # eum.key is the secret token used to authenticate to Instana's server.
-            # key:
+            # key: 
             # Rather than explicitly specifying the key, you can "bring your own secret" creating it in
             # the namespace in which you deploy "robot-shop" and specify the name in the "keysSecret" field.
             # The secret you create must contain a field called 'key' which contains the value you'd set in `.eum.key`.
             keysSecret: instana-eum-key
-            url: ""
+            url: http://169.62.165.246:2999
           psp:
             enabled: false
           nodeport: false
